@@ -27,13 +27,13 @@ class FrameHandler: NSObject, ObservableObject {
 
     func checkPermission() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
-            case .authorized: // The user has previously granted access to the camera.
-                self.permissionGranted = true
+        case .authorized: // The user has previously granted access to the camera.
+            self.permissionGranted = true
 
-            case .notDetermined: // The user has not yet been asked for camera access.
-                self.requestPermission()
+        case .notDetermined: // The user has not yet been asked for camera access.
+            self.requestPermission()
 
-        // Combine the two other cases into the default case
+            // Combine the two other cases into the default case
         default:
             self.permissionGranted = false
         }
@@ -80,5 +80,4 @@ extension FrameHandler: AVCaptureVideoDataOutputSampleBufferDelegate {
 
         return cgImage
     }
-
 }
