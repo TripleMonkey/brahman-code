@@ -13,7 +13,8 @@ struct ContentView: View {
     private let frame = Text("frame")
 
     var body: some View {
-        FrameView(image: viewModel.frame, label: frame)
+// MARK: vvv Only thing i commented vvv
+//        FrameView(image: viewModel.frame, label: frame)
         
         TabView {
             DeckView()
