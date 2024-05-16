@@ -1,0 +1,12 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "Plant Identification for FloraDex",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.version" : "14.4.1",
+    "com.apple.createml.app.tag" : "121.4",
+    "com.apple.coreml.model.preview.type" : "imageClassifier",
+    "com.apple.createml.app.version" : "5.0"
+  },
+  "MLModelAuthorKey" : "Nigel Krajewski",
+  "MLModelLicenseKey" : "--"
+}
