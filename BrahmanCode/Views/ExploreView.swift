@@ -9,14 +9,15 @@ import SwiftUI
 import CoreImage
 
 struct ExploreView: View {
+    @StateObject var viewModel = FrameHandler()
+    private let frame = Text("frame")
     
-//    @StateObject private var model = FrameHandler()
+
     
     var body: some View {
-        Text("Explore View")
-//        FrameView(image: model.frame)
-//            .ignoresSafeArea()
         
+        
+    FrameView(image: viewModel.frame, label: frame)
     }
 }
         

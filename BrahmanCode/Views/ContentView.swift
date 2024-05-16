@@ -9,12 +9,10 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @StateObject var viewModel = FrameHandler()
-    private let frame = Text("frame")
+    
 
     var body: some View {
-// MARK: vvv Only thing i commented vvv
-//        FrameView(image: viewModel.frame, label: frame)
+
         
         TabView {
             DeckView()
