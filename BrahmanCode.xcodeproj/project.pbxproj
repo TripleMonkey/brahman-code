@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54900CAA2BF6A28200A87704 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CA92BF6A28200A87704 /* CardModel.swift */; };
+		54900CAC2BF6A2F100A87704 /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CAB2BF6A2F100A87704 /* CardObject.swift */; };
+		54900CAE2BF6A30500A87704 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CAD2BF6A30500A87704 /* NavView.swift */; };
+		54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CAF2BF6A30C00A87704 /* ExploreView.swift */; };
+		54900CB22BF6A31100A87704 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CB12BF6A31100A87704 /* DeckView.swift */; };
+		54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CB32BF6A31600A87704 /* ProfileView.swift */; };
 		9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */; };
 		9E4AF5972BE94BEF003E89FE /* BrahmanIdentifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */; };
 		9E7CE1242BD7345100E2DA4E /* BrahmanCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54900CA92BF6A28200A87704 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		54900CAB2BF6A2F100A87704 /* CardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardObject.swift; sourceTree = "<group>"; };
+		54900CAD2BF6A30500A87704 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		54900CAF2BF6A30C00A87704 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		54900CB12BF6A31100A87704 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		54900CB32BF6A31600A87704 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MobileNetV2.mlpackage; sourceTree = "<group>"; };
 		9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrahmanIdentifier.mlpackage; sourceTree = "<group>"; };
 		9E7CE1202BD7345100E2DA4E /* BrahmanCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrahmanCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54900CA82BF6A1DB00A87704 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				54900CAB2BF6A2F100A87704 /* CardObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		9E7CE1172BD7345100E2DA4E = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +85,7 @@
 		9E7CE1222BD7345100E2DA4E /* BrahmanCode */ = {
 			isa = PBXGroup;
 			children = (
+				54900CA82BF6A1DB00A87704 /* Objects */,
 				9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */,
 				9E7CE18E2BD8040600E2DA4E /* Models */,
 				9E7CE1932BD8041300E2DA4E /* Views */,
@@ -88,6 +109,7 @@
 			children = (
 				9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */,
 				9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */,
+				54900CA92BF6A28200A87704 /* CardModel.swift */,
 				9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */,
 				9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */,
 			);
@@ -108,6 +130,10 @@
 			children = (
 				9E7CE1922BD8041300E2DA4E /* ContentView.swift */,
 				9E9863852BE1831500B1FE81 /* CameraFrameView.swift */,
+				54900CAD2BF6A30500A87704 /* NavView.swift */,
+				54900CAF2BF6A30C00A87704 /* ExploreView.swift */,
+				54900CB12BF6A31100A87704 /* DeckView.swift */,
+				54900CB32BF6A31600A87704 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,15 +208,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54900CAE2BF6A30500A87704 /* NavView.swift in Sources */,
 				9E7CE1942BD8041300E2DA4E /* DeckViewModel.swift in Sources */,
 				9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */,
+				54900CB22BF6A31100A87704 /* DeckView.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
+				54900CAC2BF6A2F100A87704 /* CardObject.swift in Sources */,
 				9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */,
+				54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */,
 				9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */,
+				54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */,
 				9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */,
 				9E98638E2BE4746600B1FE81 /* PlantPredictionModel.swift in Sources */,
 				9E4AF5972BE94BEF003E89FE /* BrahmanIdentifier.mlpackage in Sources */,
 				9E7CE1242BD7345100E2DA4E /* BrahmanCodeApp.swift in Sources */,
+				54900CAA2BF6A28200A87704 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
