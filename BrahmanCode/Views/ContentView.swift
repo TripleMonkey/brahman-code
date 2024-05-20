@@ -9,50 +9,43 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var floraCards: [FloraCard]
+    
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(floraCards) { floraCard in
-                    NavigationLink {
-                        Text("Card at \(floraCard.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(floraCard.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+
+        
+        TabView {
+            DeckView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "chart.bar.doc.horizontal.fill")
+                        Text("Deck")
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+            ExploreView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "camera")
+                        Text("Explore")
                     }
                 }
-            }
-        } detail: {
-            Text("Select an item")
+            NavView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "map")
+                        Text("Navigation")
+                    }
+                }
+            ProfileView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+                }
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = FloraCard(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(floraCards[index])
-            }
-        }
-    }
 }
 
 #Preview {
