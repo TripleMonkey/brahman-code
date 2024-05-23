@@ -21,7 +21,7 @@ class Store: ObservableObject {
     init() {
         items = []
         for i in 0...22 {
-            let new = CardModel(id: i, name: "Item\(i)", element: .Air, gender: .Feminine, planet: .Mars, powers: "N/A", color: colorGradient, image: "nil")
+            let new = CardModel(id: i, name: "Item\(i)", element: .Air, gender: .Feminine, planet: .Mars, powers: ["N/A"], color: colorGradient, image: "nil")
             items.append(new)
         }
     }
@@ -35,15 +35,23 @@ struct DeckView: View {
     @State private var draggingItem = 0.0
     @State var activeIndex: Int = 0
     var cardObjects = CardObject()
+    
     var body: some View {
         
         ZStack {
             
+            
             ForEach(cardObjects.cards) { item in
-                
+                let powers = item.powers
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(item.color)
+                        .shadow(color: .blu, radius: 15)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 9)
+                                .stroke(.mint, lineWidth: 2)
+                        )
+                            
                     VStack {
                         Text(item.name)
                             .background(){
@@ -54,46 +62,53 @@ struct DeckView: View {
                         Image(item.image)
                             .resizable()
                             .frame(width: 200, height: 200)
+                            .padding()
                         
                         ZStack {
                             // Green Background
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(.moss)
-                                .frame(width:250, height:120)
+                            
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text("Element:")
                                     Text("Gender:")
                                     Text("Planet:")
                                     Text("Powers:")
-                                                                        }
+                            }
+                                .font(.subheadline)
+                                .padding(.bottom)
                                 VStack(alignment: .leading) {
                                     Text(item.element.rawValue)
                                     Text(item.gender.rawValue)
                                     Text(item.planet.rawValue)
-                                    Text(item.powers)
-                                        .lineLimit(1)
+                                    Text(item.powers.joined(separator: ", "))
 
                                 }
+                                .font(.subheadline)
+                                .padding(.bottom)
                                 VStack {
-                                    
+                                    Image("heart")
+                                        .resizable() .frame(width: 20, height: 20)
                                 }
+                            }
+                            .background() {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(.moss)
+                                    .frame(width:250, height:120)
                             }
                         }
                     }
                     
                 }
                 .frame(width: 250, height: 400)
-                
                 .scaleEffect(1.2 - abs(distance(item.id)) * 0.0375 )
-                .opacity(1.2 - abs(distance(item.id)) * 0.5)
+                .opacity(1.2 - abs(distance(item.id)) * 0.8)
                 .offset(x: myXOffset(item.id), y: 0)
                 .zIndex(1.2 - abs(distance(item.id)) * 0.1)
             }
         }
         .gesture(getDragGesture())
         .onTapGesture {
-            //move card to centre
+            //move card to center
         }
     }
     

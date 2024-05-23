@@ -14,7 +14,7 @@ struct CardModel: Identifiable {
     var element: Element
     var gender: Gender
     var planet: Planet
-    var powers: String
+    var powers: [String]
     var color = colorGradient
     var image: String
     

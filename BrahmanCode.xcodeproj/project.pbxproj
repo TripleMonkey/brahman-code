@@ -85,8 +85,8 @@
 		9E7CE1222BD7345100E2DA4E /* BrahmanCode */ = {
 			isa = PBXGroup;
 			children = (
-				54900CA82BF6A1DB00A87704 /* Objects */,
 				9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */,
+				54900CA82BF6A1DB00A87704 /* Objects */,
 				9E7CE18E2BD8040600E2DA4E /* Models */,
 				9E7CE1932BD8041300E2DA4E /* Views */,
 				9E7CE1912BD8041300E2DA4E /* ViewModels */,
