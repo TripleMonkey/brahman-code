@@ -42,7 +42,6 @@ struct DeckView: View {
             
             
             ForEach(cardObjects.cards) { item in
-                let powers = item.powers
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(item.color)
