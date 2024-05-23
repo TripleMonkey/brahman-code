@@ -8,19 +8,14 @@
 import SwiftUI
 import CoreImage
 
-struct ExploreView: View {
-    @StateObject var viewModel = FrameHandler()
-    private let frame = Text("frame")
-    
 
+struct ExploreView: View {
     
     var body: some View {
-        
-        
-    FrameView(image: viewModel.frame, label: frame)
+        FrameView(classifier: ImageClassifier())
     }
 }
-        
+
 
 #Preview {
     ExploreView()
