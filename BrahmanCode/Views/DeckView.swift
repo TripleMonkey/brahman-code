@@ -10,7 +10,9 @@ class Store: ObservableObject {
     init() {
         items = []
         for i in 0...22 {
+
             let new = CardModel(id: i, name: "Item\(i)", element: .Air, gender: .Feminine, planet: .Mars, powers: ["N/A"], color: colorGradient, image: "nil", rarity: .Common, isLocked: false)
+
             items.append(new)
         }
     }
@@ -21,12 +23,12 @@ struct DeckView: View {
     @State private var snappedItem = 0.0
     @State private var draggingItem = 0.0
     var cardObjects = CardObject()
+
     var question = "?????????"
-    
-    
+
     
     var body: some View {
-        
+
         GeometryReader { geometry in
             ZStack {
                
@@ -40,14 +42,18 @@ struct DeckView: View {
                                     .stroke(.mint, lineWidth: 2)
                             )
                         VStack {
+
                             Text(item.isLocked ?  question : item.name)
+
                                 .foregroundStyle(.black)
                                 .background {
                                     RoundedRectangle(cornerRadius: 30)
                                         .fill(Color.orange)
                                         .frame(width: 160, height: 35)
                                 }
+
                             Image(item.isLocked ? question :  item.image)
+
                                 .resizable()
                                 .frame(width: 200, height: 200)
                                 .padding()
@@ -59,9 +65,11 @@ struct DeckView: View {
                                     
                                     HStack {
                                         Text("Element:")
+
                                         Text(item.isLocked ? question : item.element.rawValue)
                                         Spacer()
                                         Image(item.isLocked ?  "" : item.element.rawValue)
+
                                             .resizable()
                                             .frame(width: 20, height: 20)
                                     }
@@ -69,9 +77,11 @@ struct DeckView: View {
                                 
                                     HStack {
                                         Text("Gender: ")
+
                                         Text(item.isLocked ? question : item.gender.rawValue)
                                         Spacer()
                                         Image(item.isLocked ? "" : item.gender.rawValue)
+
                                             .resizable()
                                             .frame(width: 20, height: 20)
                                     }
@@ -125,7 +135,9 @@ struct DeckView: View {
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
+
                                             .foregroundStyle(.minty)
+
                                             .frame(width: 90 )
                                             .padding(.trailing)
                                         
@@ -134,11 +146,13 @@ struct DeckView: View {
                                                 .resizable()
                                                 .font(.title)
                                                 .frame(width: 20, height: 20)
+
                                                 .tint(Color.moss)
                                                 
                                             Text("Prev")
                                                 .font(.subheadline)
                                                 .tint(Color.moss)
+
                                         }
                                         .padding(.trailing)
                                     }
@@ -153,19 +167,24 @@ struct DeckView: View {
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
+
                                             .foregroundStyle(.minty)
+
                                             .frame(width: 90 )
                                             .padding(.leading)
                                         HStack {
                                             
                                             Text("Next")
                                                 .font(.subheadline)
+
                                                 .tint(.moss)
+
                                             Image(systemName: "leaf")
                                                 .resizable()
                                                 .font(.title)
-                                                .frame(width: 20, height: 20)
+
                                                 .tint(.moss)
+
                                             
                                         }
                                         .padding(.leading)
@@ -300,7 +319,6 @@ struct DeckView: View {
         return sin(angle) * (viewWidth / 2 - 125)
     }
 }
-
 
 
 #Preview {
