@@ -24,6 +24,9 @@
 		9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9863852BE1831500B1FE81 /* CameraFrameView.swift */; };
 		9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */; };
 		9E98638E2BE4746600B1FE81 /* PlantPredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */; };
+		9EB37FA82C05701B00CFB262 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37FA62C05701B00CFB262 /* ImageClassifier.swift */; };
+		9EB37FA92C05701B00CFB262 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37FA72C05701B00CFB262 /* ImagePicker.swift */; };
+		9EB37FAB2C05707D00CFB262 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37FAA2C05707D00CFB262 /* Classifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		9E9863852BE1831500B1FE81 /* CameraFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameView.swift; sourceTree = "<group>"; };
 		9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameHandler.swift; sourceTree = "<group>"; };
 		9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPredictionModel.swift; sourceTree = "<group>"; };
+		9EB37FA62C05701B00CFB262 /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageClassifier.swift; path = BrahmanCode/ViewModels/ImageClassifier.swift; sourceTree = SOURCE_ROOT; };
+		9EB37FA72C05701B00CFB262 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = BrahmanCode/Views/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
+		9EB37FAA2C05707D00CFB262 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 			children = (
 				9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */,
 				9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */,
+				9EB37FAA2C05707D00CFB262 /* Classifier.swift */,
 				54900CA92BF6A28200A87704 /* CardModel.swift */,
 				9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */,
 				9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */,
@@ -119,6 +126,7 @@
 		9E7CE1912BD8041300E2DA4E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9EB37FA62C05701B00CFB262 /* ImageClassifier.swift */,
 				9E7CE1902BD8041300E2DA4E /* DeckViewModel.swift */,
 				9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */,
 			);
@@ -134,6 +142,7 @@
 				54900CAF2BF6A30C00A87704 /* ExploreView.swift */,
 				54900CB12BF6A31100A87704 /* DeckView.swift */,
 				54900CB32BF6A31600A87704 /* ProfileView.swift */,
+				9EB37FA72C05701B00CFB262 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,11 +220,14 @@
 				54900CAE2BF6A30500A87704 /* NavView.swift in Sources */,
 				9E7CE1942BD8041300E2DA4E /* DeckViewModel.swift in Sources */,
 				9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */,
+				9EB37FA92C05701B00CFB262 /* ImagePicker.swift in Sources */,
 				54900CB22BF6A31100A87704 /* DeckView.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
 				54900CAC2BF6A2F100A87704 /* CardObject.swift in Sources */,
 				9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */,
 				54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */,
+				9EB37FA82C05701B00CFB262 /* ImageClassifier.swift in Sources */,
+				9EB37FAB2C05707D00CFB262 /* Classifier.swift in Sources */,
 				9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */,
 				54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */,
 				9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */,
