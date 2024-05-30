@@ -18,6 +18,7 @@ struct CardModel: Identifiable {
     var color = colorGradient
     var image: String
     var rarity: Rarity
+    var isLocked: Bool
     
     
     

@@ -10,7 +10,7 @@ class Store: ObservableObject {
     init() {
         items = []
         for i in 0...22 {
-            let new = CardModel(id: i, name: "Item\(i)", element: .Air, gender: .Feminine, planet: .Mars, powers: ["N/A"], color: colorGradient, image: "nil", rarity: .Common)
+            let new = CardModel(id: i, name: "Item\(i)", element: .Air, gender: .Feminine, planet: .Mars, powers: ["N/A"], color: colorGradient, image: "nil", rarity: .Common, isLocked: false)
             items.append(new)
         }
     }
@@ -21,8 +21,12 @@ struct DeckView: View {
     @State private var snappedItem = 0.0
     @State private var draggingItem = 0.0
     var cardObjects = CardObject()
+    var question = "?????????"
+    
+    
     
     var body: some View {
+        
         GeometryReader { geometry in
             ZStack {
                
@@ -36,14 +40,14 @@ struct DeckView: View {
                                     .stroke(.mint, lineWidth: 2)
                             )
                         VStack {
-                            Text(item.name)
+                            Text(item.isLocked ?  question : item.name)
                                 .foregroundStyle(.black)
                                 .background {
                                     RoundedRectangle(cornerRadius: 30)
                                         .fill(Color.orange)
                                         .frame(width: 160, height: 35)
                                 }
-                            Image(item.image)
+                            Image(item.isLocked ? question :  item.image)
                                 .resizable()
                                 .frame(width: 200, height: 200)
                                 .padding()
@@ -55,9 +59,9 @@ struct DeckView: View {
                                     
                                     HStack {
                                         Text("Element:")
-                                        Text(item.element.rawValue)
+                                        Text(item.isLocked ? question : item.element.rawValue)
                                         Spacer()
-                                        Image(item.element.rawValue)
+                                        Image(item.isLocked ?  "" : item.element.rawValue)
                                             .resizable()
                                             .frame(width: 20, height: 20)
                                     }
@@ -65,9 +69,9 @@ struct DeckView: View {
                                 
                                     HStack {
                                         Text("Gender: ")
-                                        Text(item.gender.rawValue)
+                                        Text(item.isLocked ? question : item.gender.rawValue)
                                         Spacer()
-                                        Image(item.gender.rawValue)
+                                        Image(item.isLocked ? "" : item.gender.rawValue)
                                             .resizable()
                                             .frame(width: 20, height: 20)
                                     }
@@ -121,7 +125,7 @@ struct DeckView: View {
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
-                                            .foregroundStyle(.red)
+                                            .foregroundStyle(.minty)
                                             .frame(width: 90 )
                                             .padding(.trailing)
                                         
@@ -130,9 +134,11 @@ struct DeckView: View {
                                                 .resizable()
                                                 .font(.title)
                                                 .frame(width: 20, height: 20)
+                                                .tint(Color.moss)
                                                 
                                             Text("Prev")
                                                 .font(.subheadline)
+                                                .tint(Color.moss)
                                         }
                                         .padding(.trailing)
                                     }
@@ -147,17 +153,19 @@ struct DeckView: View {
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
-                                            .foregroundStyle(.red)
+                                            .foregroundStyle(.minty)
                                             .frame(width: 90 )
                                             .padding(.leading)
                                         HStack {
                                             
                                             Text("Next")
                                                 .font(.subheadline)
+                                                .tint(.moss)
                                             Image(systemName: "leaf")
                                                 .resizable()
                                                 .font(.title)
                                                 .frame(width: 20, height: 20)
+                                                .tint(.moss)
                                             
                                         }
                                         .padding(.leading)
@@ -167,6 +175,89 @@ struct DeckView: View {
                                 
                             }
                         }
+                        //MARK: Locked Cards
+                        if item.isLocked {
+                                                Color.black
+                                                        .cornerRadius(10)
+                                                        .shadow(color: .red, radius: 15)
+                                                        .overlay(
+                                                            VStack {
+                                                                ZStack {
+                                                                    Image("?????????")
+                                                                        .resizable()
+                                                                        .shadow(color: .red, radius: 15)
+                                                                        .frame(width: 250, height: 460)
+                                                                        .overlay(
+                                                                            RoundedRectangle(cornerRadius: 20)
+                                                                                .stroke(.red, lineWidth: 2)
+                                                                            )
+                                                                    
+                                                                }
+                                                                // MARK: Buttons
+                                                                HStack {
+                                                                    // MARK: Prev Button
+                                                                    Button(action: {
+                                                                        withAnimation {
+                                                                            snappedItem = (snappedItem + 1).truncatingRemainder(dividingBy: Double(cardObjects.cards.count))
+                                                                            draggingItem = snappedItem
+                                                                        }
+                                                                    }) {
+                                                                        ZStack {
+                                                                            RoundedRectangle(cornerRadius: 30)
+                                                                                .foregroundStyle(.minty)
+                                                                                .frame(width: 90 )
+                                                                                .padding(.trailing)
+                                                                            
+                                                                            HStack {
+                                                                                Image(systemName: "leaf")
+                                                                                    .resizable()
+                                                                                    .font(.title)
+                                                                                    .frame(width: 20, height: 20)
+                                                                                    .tint(Color.moss)
+                                                                                    
+                                                                                Text("Prev")
+                                                                                    .font(.subheadline)
+                                                                                    .tint(Color.moss)
+                                                                            }
+                                                                            .padding(.trailing)
+                                                                        }
+                                                                    }
+                                                                    Spacer()
+                                                                    //MARK: Next Button
+                                                                    Button(action: {
+                                                                        withAnimation {
+                                                                            snappedItem = (snappedItem - 1).truncatingRemainder(dividingBy: Double(cardObjects.cards.count))
+                                                                            draggingItem = snappedItem
+                                                                        }
+                                                                    }) {
+                                                                        ZStack {
+                                                                            RoundedRectangle(cornerRadius: 30)
+                                                                                .foregroundStyle(.minty)
+                                                                                .frame(width: 90 )
+                                                                                .padding(.leading)
+                                                                            HStack {
+                                                                                
+                                                                                Text("Next")
+                                                                                    .font(.subheadline)
+                                                                                    .tint(.moss)
+                                                                                Image(systemName: "leaf")
+                                                                                    .resizable()
+                                                                                    .font(.title)
+                                                                                    .frame(width: 20, height: 20)
+                                                                                    .tint(.moss)
+                                                                                
+                                                                            }
+                                                                            .padding(.leading)
+                                                                        }
+                                                                    }
+                                                                
+                                                                    
+                                                                }
+                                                                
+                                                                
+                                                            }
+                                                        )
+                                                }
                     }
                     .frame(width: 250, height: 450)
                     .scaleEffect(1.2 - abs(distance(item.id, itemCount: cardObjects.cards.count)) * 0.0375)
@@ -209,6 +300,8 @@ struct DeckView: View {
         return sin(angle) * (viewWidth / 2 - 125)
     }
 }
+
+
 
 #Preview {
     DeckView()
