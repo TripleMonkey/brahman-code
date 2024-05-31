@@ -32,6 +32,7 @@ import Observation
         CardModel(id: 18, name: "Red Clover", element: .Fire, gender: .Masculine, planet: .Mercury, powers: ["Luck", "Success"], image: "Red Clover", rarity: .Common, isLocked: true),
         CardModel(id: 19, name: "Sumac", element: .Fire, gender: .Masculine, planet: .Jupiter, powers: ["Harmony", "Luck"], image: "Sumac", rarity: .Mythic, isLocked: false),
         CardModel(id: 20, name: "Violet", element: .Water, gender: .Feminine, planet: .Venus, powers: ["Dreams", "Creativity"], image: "Violet", rarity: .Common, isLocked: true)
+
     ]
     
   
