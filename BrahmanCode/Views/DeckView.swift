@@ -21,7 +21,8 @@ struct DeckView: View {
     @State private var snappedItem = 0.0
     @State private var draggingItem = 0.0
     var cardObjects = CardObject()
-    var question = "?????????"
+    let question = "?????????"
+    let cardBack = Image("Card Back")
     
     
     
@@ -40,13 +41,29 @@ struct DeckView: View {
                                     .stroke(.mint, lineWidth: 2)
                             )
                         VStack {
-                            Text(item.isLocked ?  question : item.name)
-                                .foregroundStyle(.black)
-                                .background {
-                                    RoundedRectangle(cornerRadius: 30)
-                                        .fill(Color.orange)
-                                        .frame(width: 160, height: 35)
+                            HStack {
+                                Image(item.isLocked ? "" : item.rarity.rawValue)
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                Text(item.isLocked ?  question : item.name)
+                                if item.isLocked == false {
+                                    Button {
+                                        
+                                    } label: {
+                                        Image(systemName: "info.circle")
+                                    }
+
+                                } else {
+                                    
                                 }
+
+                                }
+                            .foregroundStyle(.black)
+                            .background {
+                                RoundedRectangle(cornerRadius: 30)
+                                    .fill(Color.orange)
+                                    .frame(width: 225, height: 35)
+                            }
                             Image(item.isLocked ? question :  item.image)
                                 .resizable()
                                 .frame(width: 200, height: 200)
@@ -183,7 +200,7 @@ struct DeckView: View {
                                                         .overlay(
                                                             VStack {
                                                                 ZStack {
-                                                                    Image("?????????")
+                                                                    cardBack
                                                                         .resizable()
                                                                         .shadow(color: .red, radius: 15)
                                                                         .frame(width: 250, height: 460)
@@ -272,6 +289,8 @@ struct DeckView: View {
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .gesture(getDragGesture(viewWidth: geometry.size.width))
+            
+            
         }
     }
     
