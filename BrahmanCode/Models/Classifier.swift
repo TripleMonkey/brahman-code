@@ -15,10 +15,11 @@ struct Classifier {
 
     mutating func detect(ciImage: CIImage) {
 
-        guard let model = try? VNCoreMLModel(for: MobileNetV2(configuration: MLModelConfiguration()).model)
+        guard let model = try? VNCoreMLModel(for: BrahmanImageIdentifier_2(configuration: MLModelConfiguration()).model)
         else {
             return
         }
+        model.inputImageFeatureName = "imageContent"
 
         let request = VNCoreMLRequest(model: model)
 
