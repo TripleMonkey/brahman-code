@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77.9687493px" height="65.994792px" viewBox="0 0 77.9687493 65.994792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>fire</title>
+    <defs>
+        <polygon id="path-1" points="0 0 78 0 78 66 0 66"></polygon>
+    </defs>
+    <g id="Icons-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fire" transform="translate(-0.0313, -0.0052)">
+            <path d="M2.53125067,65.052084 L75.9166667,65.052084 L39.2187507,2.81770933 L2.53125067,65.052084 Z M75.427084,64.7708333 L3.01041733,64.7708333 L39.2187507,3.35416667 L75.427084,64.7708333 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            <g id="Clipped">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Path"></g>
+                <path d="M78.4062507,66.4739587 L0.0312506667,66.4739587 L39.2187507,0.005208 L78.4062507,66.4739587 Z M5.5,63.3437507 L72.9375,63.3437507 L39.2187507,6.16145867 L5.5,63.3437507 Z" id="Shape" fill="#000000" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -14,9 +14,13 @@ struct CardModel: Identifiable {
     var element: Element
     var gender: Gender
     var planet: Planet
-    var powers: String
+    var powers: [String]
     var color = colorGradient
     var image: String
+    var rarity: Rarity
+    var isLocked: Bool
+    
+    
     
 }
 var colorGradient: LinearGradient {
@@ -24,7 +28,7 @@ var colorGradient: LinearGradient {
         
 }
 enum Planet: String {
-    case Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Moon
+    case Mercury, Venus, Gaea, Mars, Jupiter, Saturn, Uranus, Neptune, Moon
     
 }
 
@@ -34,5 +38,9 @@ enum Gender: String {
 
 enum Element: String {
     case Air, Water, Earth, Fire
+}
+
+enum Rarity: String {
+    case Common, Rare, Mythic
 }
 

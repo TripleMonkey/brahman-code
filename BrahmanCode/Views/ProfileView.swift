@@ -10,6 +10,9 @@ import SwiftUI
 
 
 struct ProfileView: View {
+    
+    @State private var isDarkMode: Bool = false
+    
     var body: some View {
         NavigationView {
             Form {
@@ -25,6 +28,13 @@ struct ProfileView: View {
                 Section(header: Text("Notification Settings")) {
                     Toggle("Receive Notifications", isOn: .constant(true))
                     Toggle("Email Notifications", isOn: .constant(false))
+                    
+                        
+                }
+                
+                Section(header: Text("Display Settings")) {
+                    Toggle("Dark Mode", isOn: $isDarkMode)
+                        .preferredColorScheme(isDarkMode ? .dark : .light)
                 }
                 
                 Section(header: Text("Privacy Settings")) {
@@ -40,7 +50,7 @@ struct ProfileView: View {
                     }
                 }
             }
-            .navigationBarTitle("Account Settings")
+            .navigationBarTitle("Settings")
         }
     }
 }
