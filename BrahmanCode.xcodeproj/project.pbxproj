@@ -21,6 +21,7 @@
 		9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */; };
 		9E7CE1942BD8041300E2DA4E /* DeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1902BD8041300E2DA4E /* DeckViewModel.swift */; };
 		9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1922BD8041300E2DA4E /* ContentView.swift */; };
+		9E9381EB2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E9381EA2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage */; };
 		9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9863852BE1831500B1FE81 /* CameraFrameView.swift */; };
 		9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */; };
 		9E98638E2BE4746600B1FE81 /* PlantPredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */; };
@@ -45,6 +46,7 @@
 		9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloraCardModel.swift; sourceTree = "<group>"; };
 		9E7CE1902BD8041300E2DA4E /* DeckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewModel.swift; sourceTree = "<group>"; };
 		9E7CE1922BD8041300E2DA4E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E9381EA2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrahmanImageIdentifier_2.mlpackage; sourceTree = "<group>"; };
 		9E9863852BE1831500B1FE81 /* CameraFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameView.swift; sourceTree = "<group>"; };
 		9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameHandler.swift; sourceTree = "<group>"; };
 		9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPredictionModel.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */,
 				9EB37FAA2C05707D00CFB262 /* Classifier.swift */,
 				54900CA92BF6A28200A87704 /* CardModel.swift */,
+				9E9381EA2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage */,
 				9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */,
 				9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */,
 			);
@@ -220,6 +223,7 @@
 				54900CAE2BF6A30500A87704 /* NavView.swift in Sources */,
 				9E7CE1942BD8041300E2DA4E /* DeckViewModel.swift in Sources */,
 				9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */,
+				9E9381EB2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage in Sources */,
 				9EB37FA92C05701B00CFB262 /* ImagePicker.swift in Sources */,
 				54900CB22BF6A31100A87704 /* DeckView.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
