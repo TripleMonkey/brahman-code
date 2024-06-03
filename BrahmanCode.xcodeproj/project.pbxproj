@@ -38,7 +38,7 @@
 		54900CB32BF6A31600A87704 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MobileNetV2.mlpackage; sourceTree = "<group>"; };
 		9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrahmanIdentifier.mlpackage; sourceTree = "<group>"; };
-		9E7CE1202BD7345100E2DA4E /* BrahmanCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrahmanCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E7CE1202BD7345100E2DA4E /* HerbaDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HerbaDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrahmanCodeApp.swift; sourceTree = "<group>"; };
 		9E7CE1292BD7345200E2DA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E7CE12C2BD7345200E2DA4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		9E7CE1212BD7345100E2DA4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E7CE1202BD7345100E2DA4E /* BrahmanCode.app */,
+				9E7CE1202BD7345100E2DA4E /* HerbaDex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E7CE11F2BD7345100E2DA4E /* BrahmanCode */ = {
+		9E7CE11F2BD7345100E2DA4E /* HerbaDex */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E7CE1302BD7345200E2DA4E /* Build configuration list for PBXNativeTarget "BrahmanCode" */;
+			buildConfigurationList = 9E7CE1302BD7345200E2DA4E /* Build configuration list for PBXNativeTarget "HerbaDex" */;
 			buildPhases = (
 				9E7CE11C2BD7345100E2DA4E /* Sources */,
 				9E7CE11D2BD7345100E2DA4E /* Frameworks */,
@@ -162,9 +162,9 @@
 			);
 			dependencies = (
 			);
-			name = BrahmanCode;
+			name = HerbaDex;
 			productName = BrahmanCode;
-			productReference = 9E7CE1202BD7345100E2DA4E /* BrahmanCode.app */;
+			productReference = 9E7CE1202BD7345100E2DA4E /* HerbaDex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E7CE11F2BD7345100E2DA4E /* BrahmanCode */,
+				9E7CE11F2BD7345100E2DA4E /* HerbaDex */,
 			);
 		};
 /* End PBXProject section */
@@ -375,8 +375,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,8 +404,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E7CE1302BD7345200E2DA4E /* Build configuration list for PBXNativeTarget "BrahmanCode" */ = {
+		9E7CE1302BD7345200E2DA4E /* Build configuration list for PBXNativeTarget "HerbaDex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E7CE1312BD7345200E2DA4E /* Debug */,
