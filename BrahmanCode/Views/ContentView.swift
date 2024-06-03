@@ -10,7 +10,8 @@ import SwiftData
 
 struct ContentView: View {
     
-
+    @StateObject private var vm = LocationsViewModel()
+    
     var body: some View {
 
         
@@ -29,13 +30,14 @@ struct ContentView: View {
                         Text("Explore")
                     }
                 }
-            NavView()
+            LocationsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
                         Text("Navigation")
                     }
                 }
+            
             ProfileView()
                 .tabItem {
                     VStack {
@@ -44,6 +46,7 @@ struct ContentView: View {
                     }
                 }
         }
+        .environmentObject(vm)
     }
 
 }
