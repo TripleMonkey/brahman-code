@@ -368,7 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrahmanCode/Preview Content\"";
-				DEVELOPMENT_TEAM = 5P8JPPPQ9D;
+				DEVELOPMENT_TEAM = 83WR6P33W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan images";
@@ -398,7 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrahmanCode/Preview Content\"";
-				DEVELOPMENT_TEAM = 5P8JPPPQ9D;
+				DEVELOPMENT_TEAM = 83WR6P33W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan images";
