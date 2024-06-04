@@ -46,6 +46,7 @@ struct DeckView: View {
                                     .resizable()
                                     .frame(width: 20, height: 20)
                                 Text(item.isLocked ?  question : item.name)
+                                    .font(.custom("Chalkduster SE", size: 18))
                                 if item.isLocked == false {
                                     Button {
                                         
@@ -95,7 +96,7 @@ struct DeckView: View {
                                     .padding(.horizontal)
                                     
                                     HStack {
-                                        Text("Planet:   ")
+                                        Text("Planet:  ")
                                         Text(item.planet.rawValue)
                                         Spacer()
                                         Image(item.planet.rawValue)
@@ -129,6 +130,7 @@ struct DeckView: View {
                                 
 
                                 }
+                                .font(.custom("Chalkboard SE", size: 15))
                 
                             }
                             // MARK: Buttons
@@ -192,9 +194,10 @@ struct DeckView: View {
                                 
                             }
                         }
+                        
                         //MARK: Locked Cards
                         if item.isLocked {
-                                                Color.black
+                                                Color.clear
                                                         .cornerRadius(10)
                                                         .shadow(color: .red, radius: 15)
                                                         .overlay(
@@ -203,7 +206,7 @@ struct DeckView: View {
                                                                     cardBack
                                                                         .resizable()
                                                                         .shadow(color: .red, radius: 15)
-                                                                        .frame(width: 250, height: 460)
+                                                                        .frame(width: 275, height: 460)
                                                                         .overlay(
                                                                             RoundedRectangle(cornerRadius: 20)
                                                                                 .stroke(.red, lineWidth: 2)
@@ -276,7 +279,7 @@ struct DeckView: View {
                                                         )
                                                 }
                     }
-                    .frame(width: 250, height: 450)
+                    .frame(width: 275, height: 450)
                     .scaleEffect(1.2 - abs(distance(item.id, itemCount: cardObjects.cards.count)) * 0.0375)
                     .opacity(1.2 - abs(distance(item.id, itemCount: cardObjects.cards.count)) * 0.8)
                     .offset(x: myXOffset(item.id, itemCount: cardObjects.cards.count, viewWidth: geometry.size.width), y: 0)

@@ -3,8 +3,13 @@ import UIKit
 
 
 struct ContentView: View {
-    
+
+
+    @StateObject private var vm = LocationsViewModel()
+
     var body: some View {
+
+
         TabView {
             DeckView()
                 .tabItem {
@@ -27,13 +32,6 @@ struct ContentView: View {
                         Text("Navigation")
                     }
                 }
-            //            ProfileView()
-            //                .tabItem {
-            //                    VStack {
-            //                        Image(systemName: "person")
-            //                        Text("Profile")
-            //                    }
-            //                }
         }
         .tint(Color.accentColor)
     }

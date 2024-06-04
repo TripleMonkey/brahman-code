@@ -22,6 +22,14 @@ struct NavView: View {
     
     let belleIsleBeach = CLLocationCoordinate2D(latitude: 42.34562457742287, longitude: -82.97807724115412)
     
+    let palmerParkTrail = CLLocationCoordinate2D(latitude: 42.42479757948326, longitude: -83.11846343591505)
+    
+    let zeMound = CLLocationCoordinate2D(latitude: 42.331780872822556, longitude: -83.02724755571867)
+    
+    let dequindreCut = CLLocationCoordinate2D(latitude: 42.344005774347586, longitude: -83.03359230589366)
+    
+    let ohairPark = CLLocationCoordinate2D(latitude: 42.44074148787961, longitude: -83.22833391534378)
+    
     
     var body: some View {
         Map(position: $camera) {
@@ -32,6 +40,14 @@ struct NavView: View {
                 .tint(.cyan)
             Marker("Hiking Trails Trailhead", systemImage: "figure.hiking", coordinate: hikingTrailsTrailhead)
                 .tint(.green)
+            Marker("Belle Isle Beach", systemImage: "figure.open.water.swim", coordinate: belleIsleBeach)
+                .tint(.blue)
+            Marker("Belle Isle Beach", systemImage: "figure.open.water.swim", coordinate: belleIsleBeach)
+                .tint(.blue)
+            Marker("Belle Isle Beach", systemImage: "figure.open.water.swim", coordinate: belleIsleBeach)
+                .tint(.blue)
+            Marker("Belle Isle Beach", systemImage: "figure.open.water.swim", coordinate: belleIsleBeach)
+                .tint(.blue)
             Marker("Belle Isle Beach", systemImage: "figure.open.water.swim", coordinate: belleIsleBeach)
                 .tint(.blue)
             
