@@ -1,20 +1,10 @@
-//
-//  ContentView.swift
-//  BrahmanCode
-//
-//  Created by Nigel Krajewski on 4/22/24.
-//
-
 import SwiftUI
-import SwiftData
+import UIKit
+
 
 struct ContentView: View {
     
-    @StateObject private var vm = LocationsViewModel()
-    
     var body: some View {
-
-        
         TabView {
             DeckView()
                 .tabItem {
@@ -30,28 +20,25 @@ struct ContentView: View {
                         Text("Explore")
                     }
                 }
-            LocationsView()
+            NavView()
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
                         Text("Navigation")
                     }
                 }
-            
-//            ProfileView()
-//                .tabItem {
-//                    VStack {
-//                        Image(systemName: "person")
-//                        Text("Profile")
-//                    }
-//                }
+            //            ProfileView()
+            //                .tabItem {
+            //                    VStack {
+            //                        Image(systemName: "person")
+            //                        Text("Profile")
+            //                    }
+            //                }
         }
-        .environmentObject(vm)
+        .tint(Color.accentColor)
     }
-
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: FloraCard.self, inMemory: true)
 }
