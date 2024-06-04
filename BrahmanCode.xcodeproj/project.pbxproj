@@ -37,6 +37,7 @@
 		E3D673CD2C0E45DF00B6F131 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673CC2C0E45DF00B6F131 /* LocationsViewModel.swift */; };
 		E3D673CF2C0E45E900B6F131 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673CE2C0E45E900B6F131 /* Location.swift */; };
 		E3D673D12C0E464F00B6F131 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673D02C0E464F00B6F131 /* LocationsDataService.swift */; };
+		E3D673D32C0F959200B6F131 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673D22C0F959200B6F131 /* Splash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		E3D673CC2C0E45DF00B6F131 /* LocationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		E3D673CE2C0E45E900B6F131 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E3D673D02C0E464F00B6F131 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		E3D673D22C0F959200B6F131 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		E3D673D42C0F9A6100B6F131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 		9E7CE1222BD7345100E2DA4E /* BrahmanCode */ = {
 			isa = PBXGroup;
 			children = (
+				E3D673D42C0F9A6100B6F131 /* Info.plist */,
 				9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */,
 				54900CA82BF6A1DB00A87704 /* Objects */,
 				9E7CE18E2BD8040600E2DA4E /* Models */,
@@ -165,6 +169,7 @@
 				E3D673C32C0E45A400B6F131 /* LocationPreviewView.swift */,
 				E3D673C42C0E45A400B6F131 /* LocationsListView.swift */,
 				E3D673C62C0E45A400B6F131 /* LocationsView.swift */,
+				E3D673D22C0F959200B6F131 /* Splash.swift */,
 				9E7CE1922BD8041300E2DA4E /* ContentView.swift */,
 				9E9863852BE1831500B1FE81 /* CameraFrameView.swift */,
 				E3D673C02C0E450C00B6F131 /* NewMapView.swift */,
@@ -257,6 +262,7 @@
 				E3D673CF2C0E45E900B6F131 /* Location.swift in Sources */,
 				54900CB22BF6A31100A87704 /* DeckView.swift in Sources */,
 				E3D673D12C0E464F00B6F131 /* LocationsDataService.swift in Sources */,
+				E3D673D32C0F959200B6F131 /* Splash.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
 				54900CAC2BF6A2F100A87704 /* CardObject.swift in Sources */,
 				E3D673C12C0E450C00B6F131 /* NewMapView.swift in Sources */,
@@ -411,11 +417,13 @@
 				DEVELOPMENT_TEAM = 83WR6P33W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrahmanCode/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,9 +450,11 @@
 
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrahmanCode/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (

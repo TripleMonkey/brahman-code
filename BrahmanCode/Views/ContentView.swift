@@ -1,14 +1,9 @@
-//
-//  ContentView.swift
-//  BrahmanCode
-//
-//  Created by Nigel Krajewski on 4/22/24.
-//
-
 import SwiftUI
-import SwiftData
+import UIKit
+
 
 struct ContentView: View {
+
 
     @StateObject private var vm = LocationsViewModel()
 
@@ -30,7 +25,7 @@ struct ContentView: View {
                         Text("Explore")
                     }
                 }
-            LocationsView()
+            NavView()
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
@@ -38,12 +33,10 @@ struct ContentView: View {
                     }
                 }
         }
-        .environmentObject(vm)
+        .tint(Color.accentColor)
     }
-
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: FloraCard.self, inMemory: true)
 }
