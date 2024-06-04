@@ -9,12 +9,12 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    
+
     @StateObject private var vm = LocationsViewModel()
-    
+
     var body: some View {
 
-        
+
         TabView {
             DeckView()
                 .tabItem {
@@ -35,14 +35,6 @@ struct ContentView: View {
                     VStack {
                         Image(systemName: "map")
                         Text("Navigation")
-                    }
-                }
-            
-            ProfileView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person")
-                        Text("Profile")
                     }
                 }
         }
