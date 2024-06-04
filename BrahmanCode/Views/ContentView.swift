@@ -38,13 +38,13 @@ struct ContentView: View {
                     }
                 }
             
-            ProfileView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person")
-                        Text("Profile")
-                    }
-                }
+//            ProfileView()
+//                .tabItem {
+//                    VStack {
+//                        Image(systemName: "person")
+//                        Text("Profile")
+//                    }
+//                }
         }
         .environmentObject(vm)
     }
