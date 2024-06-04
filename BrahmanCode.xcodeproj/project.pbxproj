@@ -21,12 +21,22 @@
 		9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */; };
 		9E7CE1942BD8041300E2DA4E /* DeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1902BD8041300E2DA4E /* DeckViewModel.swift */; };
 		9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1922BD8041300E2DA4E /* ContentView.swift */; };
+		9E9381EB2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E9381EA2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage */; };
 		9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9863852BE1831500B1FE81 /* CameraFrameView.swift */; };
 		9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */; };
 		9E98638E2BE4746600B1FE81 /* PlantPredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */; };
 		9EB37FA82C05701B00CFB262 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37FA62C05701B00CFB262 /* ImageClassifier.swift */; };
 		9EB37FA92C05701B00CFB262 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37FA72C05701B00CFB262 /* ImagePicker.swift */; };
 		9EB37FAB2C05707D00CFB262 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37FAA2C05707D00CFB262 /* Classifier.swift */; };
+		E3D673C12C0E450C00B6F131 /* NewMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673C02C0E450C00B6F131 /* NewMapView.swift */; };
+		E3D673C72C0E45A500B6F131 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673C22C0E45A400B6F131 /* LocationMapAnnotationView.swift */; };
+		E3D673C82C0E45A500B6F131 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673C32C0E45A400B6F131 /* LocationPreviewView.swift */; };
+		E3D673C92C0E45A500B6F131 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673C42C0E45A400B6F131 /* LocationsListView.swift */; };
+		E3D673CA2C0E45A500B6F131 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673C52C0E45A400B6F131 /* LocationDetailView.swift */; };
+		E3D673CB2C0E45A500B6F131 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673C62C0E45A400B6F131 /* LocationsView.swift */; };
+		E3D673CD2C0E45DF00B6F131 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673CC2C0E45DF00B6F131 /* LocationsViewModel.swift */; };
+		E3D673CF2C0E45E900B6F131 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673CE2C0E45E900B6F131 /* Location.swift */; };
+		E3D673D12C0E464F00B6F131 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D673D02C0E464F00B6F131 /* LocationsDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,12 +55,22 @@
 		9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloraCardModel.swift; sourceTree = "<group>"; };
 		9E7CE1902BD8041300E2DA4E /* DeckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewModel.swift; sourceTree = "<group>"; };
 		9E7CE1922BD8041300E2DA4E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E9381EA2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrahmanImageIdentifier_2.mlpackage; sourceTree = "<group>"; };
 		9E9863852BE1831500B1FE81 /* CameraFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameView.swift; sourceTree = "<group>"; };
 		9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameHandler.swift; sourceTree = "<group>"; };
 		9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPredictionModel.swift; sourceTree = "<group>"; };
 		9EB37FA62C05701B00CFB262 /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageClassifier.swift; path = BrahmanCode/ViewModels/ImageClassifier.swift; sourceTree = SOURCE_ROOT; };
 		9EB37FA72C05701B00CFB262 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = BrahmanCode/Views/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
 		9EB37FAA2C05707D00CFB262 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		E3D673C02C0E450C00B6F131 /* NewMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapView.swift; sourceTree = "<group>"; };
+		E3D673C22C0E45A400B6F131 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		E3D673C32C0E45A400B6F131 /* LocationPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		E3D673C42C0E45A400B6F131 /* LocationsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		E3D673C52C0E45A400B6F131 /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		E3D673C62C0E45A400B6F131 /* LocationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		E3D673CC2C0E45DF00B6F131 /* LocationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		E3D673CE2C0E45E900B6F131 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E3D673D02C0E464F00B6F131 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +134,12 @@
 			isa = PBXGroup;
 			children = (
 				9E7CE18D2BD8040600E2DA4E /* FloraCardModel.swift */,
+				E3D673D02C0E464F00B6F131 /* LocationsDataService.swift */,
 				9E98638D2BE4746600B1FE81 /* PlantPredictionModel.swift */,
+				E3D673CE2C0E45E900B6F131 /* Location.swift */,
 				9EB37FAA2C05707D00CFB262 /* Classifier.swift */,
 				54900CA92BF6A28200A87704 /* CardModel.swift */,
+				9E9381EA2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage */,
 				9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */,
 				9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */,
 			);
@@ -127,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				9EB37FA62C05701B00CFB262 /* ImageClassifier.swift */,
+				E3D673CC2C0E45DF00B6F131 /* LocationsViewModel.swift */,
 				9E7CE1902BD8041300E2DA4E /* DeckViewModel.swift */,
 				9E9863872BE1849D00B1FE81 /* CameraFrameHandler.swift */,
 			);
@@ -136,8 +160,14 @@
 		9E7CE1932BD8041300E2DA4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3D673C52C0E45A400B6F131 /* LocationDetailView.swift */,
+				E3D673C22C0E45A400B6F131 /* LocationMapAnnotationView.swift */,
+				E3D673C32C0E45A400B6F131 /* LocationPreviewView.swift */,
+				E3D673C42C0E45A400B6F131 /* LocationsListView.swift */,
+				E3D673C62C0E45A400B6F131 /* LocationsView.swift */,
 				9E7CE1922BD8041300E2DA4E /* ContentView.swift */,
 				9E9863852BE1831500B1FE81 /* CameraFrameView.swift */,
+				E3D673C02C0E450C00B6F131 /* NewMapView.swift */,
 				54900CAD2BF6A30500A87704 /* NavView.swift */,
 				54900CAF2BF6A30C00A87704 /* ExploreView.swift */,
 				54900CB12BF6A31100A87704 /* DeckView.swift */,
@@ -218,23 +248,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				54900CAE2BF6A30500A87704 /* NavView.swift in Sources */,
+				E3D673C92C0E45A500B6F131 /* LocationsListView.swift in Sources */,
 				9E7CE1942BD8041300E2DA4E /* DeckViewModel.swift in Sources */,
 				9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */,
+				9E9381EB2C0CCEA4000563C7 /* BrahmanImageIdentifier_2.mlpackage in Sources */,
 				9EB37FA92C05701B00CFB262 /* ImagePicker.swift in Sources */,
+				E3D673C82C0E45A500B6F131 /* LocationPreviewView.swift in Sources */,
+				E3D673CF2C0E45E900B6F131 /* Location.swift in Sources */,
 				54900CB22BF6A31100A87704 /* DeckView.swift in Sources */,
+				E3D673D12C0E464F00B6F131 /* LocationsDataService.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
 				54900CAC2BF6A2F100A87704 /* CardObject.swift in Sources */,
+				E3D673C12C0E450C00B6F131 /* NewMapView.swift in Sources */,
 				9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */,
 				54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */,
 				9EB37FA82C05701B00CFB262 /* ImageClassifier.swift in Sources */,
+				E3D673C72C0E45A500B6F131 /* LocationMapAnnotationView.swift in Sources */,
 				9EB37FAB2C05707D00CFB262 /* Classifier.swift in Sources */,
+				E3D673CA2C0E45A500B6F131 /* LocationDetailView.swift in Sources */,
 				9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */,
 				54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */,
 				9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */,
 				9E98638E2BE4746600B1FE81 /* PlantPredictionModel.swift in Sources */,
 				9E4AF5972BE94BEF003E89FE /* BrahmanIdentifier.mlpackage in Sources */,
+				E3D673CB2C0E45A500B6F131 /* LocationsView.swift in Sources */,
 				9E7CE1242BD7345100E2DA4E /* BrahmanCodeApp.swift in Sources */,
 				54900CAA2BF6A28200A87704 /* CardModel.swift in Sources */,
+				E3D673CD2C0E45DF00B6F131 /* LocationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +437,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrahmanCode/Preview Content\"";
+
 				DEVELOPMENT_TEAM = 83WR6P33W7;
+
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan images";
