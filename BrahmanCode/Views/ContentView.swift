@@ -25,16 +25,17 @@ struct ContentView: View {
                         Text("Explore")
                     }
                 }
-            NavView()
+            LocationsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
                         Text("Navigation")
                     }
                 }
+                .environmentObject(vm)
+                .toolbarBackground(.visible, for: .tabBar)
+                .tint(Color.accentColor)
         }
-        .background(Color.gray)
-        .tint(Color.accentColor)
     }
 }
 
