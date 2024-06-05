@@ -23,10 +23,8 @@ struct CardModel: Identifiable {
     
     
 }
-var colorGradient: LinearGradient {
-    LinearGradient(colors: [.darkGreen, .minty, .blu], startPoint: .topLeading, endPoint: .bottomTrailing)
-        
-}
+var colorGradient: LinearGradient = LinearGradient(colors: [.darkGreen, .minty, .blu], startPoint: .topLeading, endPoint: .bottomTrailing)
+
 enum Planet: String {
     case Mercury, Venus, Gaea, Mars, Jupiter, Saturn, Uranus, Neptune, Moon
     

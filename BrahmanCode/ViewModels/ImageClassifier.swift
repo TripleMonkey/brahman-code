@@ -13,7 +13,7 @@ class ImageClassifier: ObservableObject {
     @Published private var classifier = Classifier()
 
     var imageClass: String? {
-        classifier.results
+        classifier.result
     }
 
     // MARK: Intent(s)

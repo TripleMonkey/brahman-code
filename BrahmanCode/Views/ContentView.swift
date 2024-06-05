@@ -33,6 +33,7 @@ struct ContentView: View {
                     }
                 }
         }
+        .background(Color.gray)
         .tint(Color.accentColor)
     }
 }

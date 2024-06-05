@@ -5,13 +5,17 @@
 //  Created by Nigel Krajewski on 5/22/24.
 //
 
+
+import CoreImage
 import CoreML
 import Vision
-import CoreImage
+import SwiftUI
 
 struct Classifier {
 
-    private(set) var results: String?
+    private(set) var result: String?
+
+    @ObservedObject var deck = DeckViewModel.shared
 
     mutating func detect(ciImage: CIImage) {
 
@@ -32,7 +36,18 @@ struct Classifier {
         }
 
         if let firstResult = results.first {
-            self.results = firstResult.identifier
+            self.result = firstResult.identifier
+            var cardIndex = 0
+            for card in deck.cards {
+                if firstResult.identifier == card.name.lowercased() {
+                    $deck.cards[cardIndex].isLocked.wrappedValue = false
+                }
+                cardIndex += 1
+
+
+            }
+
+
         }
 
     }

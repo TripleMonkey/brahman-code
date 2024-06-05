@@ -20,7 +20,7 @@ struct DeckView: View {
     @StateObject var store = Store()
     @State private var snappedItem = 0.0
     @State private var draggingItem = 0.0
-    var cardObjects = CardObject()
+    var cardObjects = DeckViewModel.shared
     let question = "?????????"
     let cardBack = Image("Card Back")
     
