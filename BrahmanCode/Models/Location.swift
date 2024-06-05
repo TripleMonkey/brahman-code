@@ -22,7 +22,7 @@ struct Location: Identifiable, Equatable {
         // name = "Colosseum"
         // cityName = "Rome"
         // id = "ColosseumRome"
-        name + cityName
+        "\(name) \(cityName)"
     }
     
     // Equatable
