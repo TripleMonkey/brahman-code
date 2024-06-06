@@ -11,8 +11,10 @@ struct CardView: View {
 
     @ObservedObject var deckVM = DeckViewModel.shared
 
+    var card: CardModel
+
     var body: some View {
-        if !deckVM.currentCard.isLocked {
+        if card.isLocked {
             Image("Card Back")
                 .resizable()
                 .scaledToFit()
@@ -25,11 +27,11 @@ struct CardView: View {
                 .padding()
                 .overlay(content: {
                     VStack {
-                        CardHeaderView()
-                        Image(deckVM.currentCard.image.lowercased())
+                        CardHeaderView(cardTitle: card.name)
+                        Image(card.image)
                             .resizable()
                             .scaledToFit()
-                        PlantDetailView()
+                        PlantDetailView(card: card)
                             .padding(.bottom, 40)
                     }
                     .background(content: {
@@ -50,5 +52,5 @@ struct CardView: View {
     }
 }
 #Preview {
-    CardView()
+    CardView(card: CardModel(id: 2, name: "Milk Thistle", element: .Fire, gender: .Masculine, planet: .Mars, powers: ["Hex-Break", "Protection", "Healing"], image: "Milk Thistle", rarity: .Common, isLocked: true))
 }

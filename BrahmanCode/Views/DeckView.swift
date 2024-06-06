@@ -10,7 +10,7 @@ struct DeckView: View {
             VStack {
                 ZStack {
                     ForEach(deckVM.cards) { card in
-                        CardView()
+                        CardView(card: card)
                             .padding(.trailing)
                             .scaleEffect(1 - abs(distance(card.id, itemCount: deckVM.cards.count)) * 0.0375)
                             .opacity(2 - abs(distance(card.id, itemCount: deckVM.cards.count)) * 0.8)

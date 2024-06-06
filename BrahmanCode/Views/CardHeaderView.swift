@@ -11,11 +11,12 @@ struct CardHeaderView: View {
 
     @ObservedObject var DeckVM = DeckViewModel.shared
 
+    let cardTitle: String
 
     var body: some View {
         HStack {
             Spacer()
-            Text(DeckVM.currentCard.name)
+            Text(cardTitle)
                 .padding()
                 .padding([.leading, .trailing], 40)
                 .font(.custom("ChalkDuster", size: 14, relativeTo: .title))
@@ -40,6 +41,6 @@ struct CardHeaderView: View {
     ZStack {
         RoundedRectangle(cornerRadius: 25)
             .foregroundStyle(.gray)
-        CardHeaderView()
+        CardHeaderView(cardTitle: "Dandelion")
     }
 }
