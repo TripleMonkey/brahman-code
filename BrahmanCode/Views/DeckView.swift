@@ -327,7 +327,7 @@ struct DeckView: View {
 
 #Preview {
     DeckView()
-        .previewInterfaceOrientation(.landscapeLeft)
+       
 }
 
 
