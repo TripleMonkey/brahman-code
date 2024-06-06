@@ -13,6 +13,8 @@
 		54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CAF2BF6A30C00A87704 /* ExploreView.swift */; };
 		54900CB22BF6A31100A87704 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CB12BF6A31100A87704 /* DeckView.swift */; };
 		54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CB32BF6A31600A87704 /* ProfileView.swift */; };
+		54900CC12C112B9700A87704 /* UnlockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CC02C112B9700A87704 /* UnlockedCardView.swift */; };
+		54900CC32C112BA000A87704 /* LockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CC22C112BA000A87704 /* LockedCardView.swift */; };
 		9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */; };
 		9E4AF5972BE94BEF003E89FE /* BrahmanIdentifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */; };
 		9E7CE1242BD7345100E2DA4E /* BrahmanCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */; };
@@ -36,6 +38,8 @@
 		54900CAF2BF6A30C00A87704 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		54900CB12BF6A31100A87704 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 		54900CB32BF6A31600A87704 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		54900CC02C112B9700A87704 /* UnlockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UnlockedCardView.swift; path = BrahmanCode/UnlockedCardView.swift; sourceTree = SOURCE_ROOT; };
+		54900CC22C112BA000A87704 /* LockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCardView.swift; sourceTree = "<group>"; };
 		9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MobileNetV2.mlpackage; sourceTree = "<group>"; };
 		9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrahmanIdentifier.mlpackage; sourceTree = "<group>"; };
 		9E7CE1202BD7345100E2DA4E /* HerbaDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HerbaDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,11 +140,13 @@
 		9E7CE1932BD8041300E2DA4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				54900CC02C112B9700A87704 /* UnlockedCardView.swift */,
+				54900CC22C112BA000A87704 /* LockedCardView.swift */,
 				9E7CE1922BD8041300E2DA4E /* ContentView.swift */,
+				54900CB12BF6A31100A87704 /* DeckView.swift */,
 				9E9863852BE1831500B1FE81 /* CameraFrameView.swift */,
 				54900CAD2BF6A30500A87704 /* NavView.swift */,
 				54900CAF2BF6A30C00A87704 /* ExploreView.swift */,
-				54900CB12BF6A31100A87704 /* DeckView.swift */,
 				54900CB32BF6A31600A87704 /* ProfileView.swift */,
 				9EB37FA72C05701B00CFB262 /* ImagePicker.swift */,
 			);
@@ -223,6 +229,7 @@
 				9EB37FA92C05701B00CFB262 /* ImagePicker.swift in Sources */,
 				54900CB22BF6A31100A87704 /* DeckView.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
+				54900CC32C112BA000A87704 /* LockedCardView.swift in Sources */,
 				54900CAC2BF6A2F100A87704 /* CardObject.swift in Sources */,
 				9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */,
 				54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */,
@@ -232,6 +239,7 @@
 				54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */,
 				9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */,
 				9E98638E2BE4746600B1FE81 /* PlantPredictionModel.swift in Sources */,
+				54900CC12C112B9700A87704 /* UnlockedCardView.swift in Sources */,
 				9E4AF5972BE94BEF003E89FE /* BrahmanIdentifier.mlpackage in Sources */,
 				9E7CE1242BD7345100E2DA4E /* BrahmanCodeApp.swift in Sources */,
 				54900CAA2BF6A28200A87704 /* CardModel.swift in Sources */,

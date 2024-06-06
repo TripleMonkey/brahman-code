@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LockedCardView: View {
+    var cardBack = Image("card back")
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            cardBack
+                .resizable()
+                .shadow(color: .red, radius: 15)
+                .frame(width: 275, height: 460)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(.red, lineWidth: 2)
+                )
+        }
     }
 }
 

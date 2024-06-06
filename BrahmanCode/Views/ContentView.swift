@@ -10,42 +10,55 @@ import SwiftData
 
 struct ContentView: View {
     
-
+    
     var body: some View {
-
+        
         
         TabView {
-            DeckView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "chart.bar.doc.horizontal.fill")
-                        Text("Deck")
+            Group {
+                
+                
+                DeckView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "chart.bar.doc.horizontal.fill")
+                            Text("Deck")
+                        }
                     }
-                }
-            ExploreView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "camera")
-                        Text("Explore")
+                
+                ExploreView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "camera")
+                            Text("Explore")
+                        }
                     }
-                }
-            NavView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "map")
-                        Text("Navigation")
+                NavView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "map")
+                            Text("Navigation")
+                        }
                     }
-                }
-            ProfileView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person")
-                        Text("Profile")
-                    }
-                }
-        }
-    }
+//                ProfileView()
+//                    .tabItem {
+//                        VStack {
+//                            Image(systemName: "person")
+//                            Text("Profile")
+//                        }
+//                    }
+            }
+            .toolbarBackground(.visible, for: .tabBar)
+            
+ 
+            
 
+        }
+        
+        .tint(Color.accentColor)
+        
+    }
+    
 }
 
 #Preview {
