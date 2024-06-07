@@ -40,11 +40,11 @@ struct Classifier {
             var cardIndex = 0
             for card in deck.cards {
                 if firstResult.identifier == card.name.lowercased() {
-                    $deck.cards[cardIndex].isLocked.wrappedValue = false
+                    deck.cards[cardIndex].isLocked = false
+                    deck.currentCard = deck.cards[cardIndex]
+                    print(deck.cards[cardIndex].name)
                 }
                 cardIndex += 1
-
-
             }
 
 

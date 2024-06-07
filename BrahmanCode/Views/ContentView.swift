@@ -18,6 +18,7 @@ struct ContentView: View {
                         Text("Deck")
                     }
                 }
+                .padding()
             ExploreView()
                 .tabItem {
                     VStack {
