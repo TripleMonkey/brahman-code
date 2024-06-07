@@ -11,8 +11,6 @@ struct PlantDetailView: View {
 
     @ObservedObject var deckVM = DeckViewModel.shared
 
-    let card: CardModel
-
     let frameMultiplier = 0.06
 
     var body: some View {
@@ -29,14 +27,14 @@ struct PlantDetailView: View {
             .fontWeight(.bold)
 
             VStack(alignment: .leading) {
-                Text(card.element.rawValue)
+                Text(deckVM.currentCard.element.rawValue)
                     .padding(.bottom)
-                Text(card.gender.rawValue)
+                Text(deckVM.currentCard.gender.rawValue)
                     .padding(.bottom)
-                Text(card.planet.rawValue)
+                Text(deckVM.currentCard.planet.rawValue)
                     .padding(.bottom)
                 HStack {
-                    ForEach(card.powers, id: \.self) { power in
+                    ForEach(deckVM.currentCard.powers, id: \.self) { power in
                         Image(power)
                             .resizable()
                             .scaledToFit()
@@ -47,17 +45,17 @@ struct PlantDetailView: View {
             .fontWeight(.bold)
 
             VStack(alignment: .trailing) {
-                Image(card.element.rawValue.lowercased())
+                Image(deckVM.currentCard.element.rawValue.lowercased())
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
                     .padding(.bottom)
-                Image(card.gender.rawValue.lowercased())
+                Image(deckVM.currentCard.gender.rawValue.lowercased())
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
                     .padding(.bottom)
-                Image(card.planet.rawValue.lowercased())
+                Image(deckVM.currentCard.planet.rawValue.lowercased())
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
@@ -88,5 +86,5 @@ struct PlantDetailView: View {
 
 
 #Preview {
-    PlantDetailView(card: CardModel(id: 2, name: "Milk Thistle", element: .Fire, gender: .Masculine, planet: .Mars, powers: ["Hex-Break", "Protection", "Healing"], image: "Milk Thistle", rarity: .Common, isLocked: true))
+    PlantDetailView()
 }
