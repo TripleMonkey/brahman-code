@@ -10,55 +10,45 @@ import SwiftData
 
 struct ContentView: View {
     
+    @StateObject private var vm = LocationsViewModel()
     
     var body: some View {
-        
+
         
         TabView {
-            Group {
-                
-                
-                DeckView()
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "chart.bar.doc.horizontal.fill")
-                            Text("Deck")
-                        }
+            DeckView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "chart.bar.doc.horizontal.fill")
+                        Text("Deck")
                     }
-                
-                ExploreView()
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "camera")
-                            Text("Explore")
-                        }
+                }
+            ExploreView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "camera")
+                        Text("Explore")
                     }
-                NavView()
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "map")
-                            Text("Navigation")
-                        }
+                }
+            LocationsView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "map")
+                        Text("Navigation")
                     }
-//                ProfileView()
-//                    .tabItem {
-//                        VStack {
-//                            Image(systemName: "person")
-//                            Text("Profile")
-//                        }
-//                    }
-            }
-            .toolbarBackground(.visible, for: .tabBar)
+                }
             
- 
-            
-
+            ProfileView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+                }
         }
-        
-        .tint(Color.accentColor)
-        
+        .environmentObject(vm)
     }
-    
+
 }
 
 #Preview {
