@@ -15,6 +15,8 @@
 		54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900CB32BF6A31600A87704 /* ProfileView.swift */; };
 		9E4AF5952BE7EAC7003E89FE /* MobileNetV2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */; };
 		9E4AF5972BE94BEF003E89FE /* BrahmanIdentifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */; };
+		9E679C4E2C1A1213003A98CB /* UnlockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E679C4D2C1A1213003A98CB /* UnlockedCardView.swift */; };
+		9E679C502C1A1287003A98CB /* LockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E679C4F2C1A1287003A98CB /* LockedCardView.swift */; };
 		9E7CE1242BD7345100E2DA4E /* BrahmanCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */; };
 		9E7CE12A2BD7345200E2DA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CE1292BD7345200E2DA4E /* Assets.xcassets */; };
 		9E7CE12D2BD7345200E2DA4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CE12C2BD7345200E2DA4E /* Preview Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		54900CB32BF6A31600A87704 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9E4AF5942BE7EAC7003E89FE /* MobileNetV2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MobileNetV2.mlpackage; sourceTree = "<group>"; };
 		9E4AF5962BE94BEF003E89FE /* BrahmanIdentifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = BrahmanIdentifier.mlpackage; sourceTree = "<group>"; };
+		9E679C4D2C1A1213003A98CB /* UnlockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockedCardView.swift; sourceTree = "<group>"; };
+		9E679C4F2C1A1287003A98CB /* LockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCardView.swift; sourceTree = "<group>"; };
 		9E7CE1202BD7345100E2DA4E /* FloraDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloraDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7CE1232BD7345100E2DA4E /* BrahmanCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrahmanCodeApp.swift; sourceTree = "<group>"; };
 		9E7CE1292BD7345200E2DA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,7 +163,9 @@
 			children = (
 				E3D673C52C0E45A400B6F131 /* LocationDetailView.swift */,
 				E3D673C22C0E45A400B6F131 /* LocationMapAnnotationView.swift */,
+				9E679C4D2C1A1213003A98CB /* UnlockedCardView.swift */,
 				E3D673C32C0E45A400B6F131 /* LocationPreviewView.swift */,
+				9E679C4F2C1A1287003A98CB /* LockedCardView.swift */,
 				E3D673C42C0E45A400B6F131 /* LocationsListView.swift */,
 				E3D673C62C0E45A400B6F131 /* LocationsView.swift */,
 				E3D673D22C0F959200B6F131 /* Splash.swift */,
@@ -261,6 +267,7 @@
 				9EA81B922C115AED0085EE34 /* PlantDetailView.swift in Sources */,
 				E3D673D32C0F959200B6F131 /* Splash.swift in Sources */,
 				9E7CE18F2BD8040600E2DA4E /* FloraCardModel.swift in Sources */,
+				9E679C4E2C1A1213003A98CB /* UnlockedCardView.swift in Sources */,
 				54900CAC2BF6A2F100A87704 /* DeckViewModel.swift in Sources */,
 				9E9863862BE1831500B1FE81 /* CameraFrameView.swift in Sources */,
 				54900CB42BF6A31600A87704 /* ProfileView.swift in Sources */,
@@ -268,6 +275,7 @@
 				E3D673C72C0E45A500B6F131 /* LocationMapAnnotationView.swift in Sources */,
 				9EB37FAB2C05707D00CFB262 /* Classifier.swift in Sources */,
 				E3D673CA2C0E45A500B6F131 /* LocationDetailView.swift in Sources */,
+				9E679C502C1A1287003A98CB /* LockedCardView.swift in Sources */,
 				9E9863882BE1849D00B1FE81 /* CameraFrameHandler.swift in Sources */,
 				54900CB02BF6A30C00A87704 /* ExploreView.swift in Sources */,
 				9E7CE1952BD8041300E2DA4E /* ContentView.swift in Sources */,
